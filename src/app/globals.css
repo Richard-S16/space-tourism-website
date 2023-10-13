@@ -2,26 +2,48 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+@layer base {
+  /* BarlowCondensed-Regular Font */
+  @font-face {
+    font-family: "BarlowCondensed";
+    src: url("/assets/fonts/BarlowCondensed-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
   }
-}
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  /* Bellefair-Regular Font */
+  @font-face {
+    font-family: "Bellefair";
+    src: url("/assets/fonts/Bellefair-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  h1 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 150px;
+  }
+
+  h2 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 100px;
+  }
+
+  h3 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 56px;
+  }
+
+  h4 {
+    font-family: "Bellefair", sans-serif;
+    font-size: 32px;
+  }
+
+  h5 {
+    font-family: "BarlowCondensed", sans-serif;
+    font-size: 28px;
+    letter-spacing: 4.75px;
+  }
 }
