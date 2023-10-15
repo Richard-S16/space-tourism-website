@@ -36,9 +36,9 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center">
-        <butto className="hover:shadow-exploreButton mt-20 h-[150px] w-[150px] rounded-full bg-color-3 font-Bellefair text-xl tracking-[1.25px] text-color-1 transition-shadow">
+        <button className="hover:shadow-exploreButton mt-20 h-[150px] w-[150px] rounded-full bg-color-3 font-Bellefair text-xl tracking-[1.25px] text-color-1 transition-shadow">
           EXPLORE
-        </butto
+        </button
       </div>
     </div>
   );
