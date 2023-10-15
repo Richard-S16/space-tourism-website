@@ -14,8 +14,15 @@ const config: Config = {
         "color-3": "#FFFFFF",
       },
       fontFamily: {
-        BarlowCondensed: ["BarlowCondensed-Regular", "sans-serif"],
-        Bellefair: ["Bellefair-Regular", "sans-serif"],
+        Barlow: ["Barlow", "sans-serif"],
+        BarlowCondensed: ["BarlowCondensed", "sans-serif"],
+        Bellefair: ["Bellefair", "sans-serif"],
+      },
+      backgroundImage: {
+        home: "url('/assets/home/background-home-mobile.jpg')",
+      },
+      boxShadow: {
+        exploreButton: "0px 0px 0px 30px rgb(255 255 255 / 10%)",
       },
     },
   },
