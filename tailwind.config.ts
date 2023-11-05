@@ -19,10 +19,11 @@ const config: Config = {
         Bellefair: ["Bellefair", "sans-serif"],
       },
       backgroundImage: {
-        home: "url('/assets/home/background-home-mobile.jpg')",
+        "home-mobile": "url('/assets/home/background-home-mobile.jpg')",
+        "home-tablet": "url('/assets/home/background-home-tablet.jpg')",
       },
       boxShadow: {
-        exploreButton: "0px 0px 0px 30px rgb(255 255 255 / 10%)",
+        "explore-button": "0px 0px 0px 30px rgb(255 255 255 / 10%)",
       },
     },
   },

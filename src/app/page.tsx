@@ -1,26 +1,10 @@
-import Image from "next/image";
+import ButtonExplore from "./components/ButtonExplore";
+import Nav from "./components/Nav";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-home bg-cover">
-      <div className="flex items-center justify-between">
-        <Image
-          src="/assets/shared/logo.svg"
-          alt="Logo"
-          className="ml-6 pt-6"
-          width={40}
-          height={40}
-          quality={100}
-        />
-        <Image
-          src="/assets/shared/icon-hamburger.svg"
-          alt="Hamburguer Menu"
-          className="mr-6 mt-8"
-          width={24}
-          height={21}
-          quality={100}
-        />
-      </div>
+    <div className="h-screen bg-home-mobile bg-cover sm:bg-home-tablet">
+      <Nav />
 
       <div className="mx-6 mt-12 text-center">
         <p className="font-BarlowCondensed tracking-[2.7px] text-color-2">
@@ -36,9 +20,7 @@ export default function Home() {
       </div>
 
       <div className="flex justify-center">
-        <button className="hover:shadow-exploreButton mt-20 h-[150px] w-[150px] rounded-full bg-color-3 font-Bellefair text-xl tracking-[1.25px] text-color-1 transition-shadow">
-          EXPLORE
-        </button>
+        <ButtonExplore />
       </div>
     </div>
   );
