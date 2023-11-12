@@ -1,7 +1,16 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useEffect, useState } from "react";
 
 export default function Links({ className }: { className: string }) {
+  const pathname = usePathname();
+  const [currentPage, setCurrentPage] = useState(pathname);
   const links = ["HOME", "DESTINATION", "CREW", "TECHNOLOGY"];
+
+  useEffect(() => {
+    if (pathname === "/") setCurrentPage("HOME");
+  }, [pathname]);
 
   return (
     <div
@@ -11,7 +20,11 @@ export default function Links({ className }: { className: string }) {
         <Link
           key={link}
           href="#"
-          className="flex items-center self-stretch hover:border-b hover:border-b-color-3"
+          className={`${
+            link === currentPage
+              ? "border-b-[3px] border-b-color-3"
+              : "hover:border-b-color-3 hover:border-opacity-50"
+          } flex items-center self-stretch hover:border-b-[3px] `}
         >
           {link}
         </Link>

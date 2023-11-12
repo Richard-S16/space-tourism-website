@@ -1,3 +1,4 @@
+import Nav from "./components/Nav";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -12,7 +13,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-Barlow text-color-3">{children}</body>
+      <body className="font-Barlow text-color-3">
+        <Nav />
+        {children}
+      </body>
     </html>
   );
 }
