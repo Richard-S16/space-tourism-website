@@ -2,7 +2,7 @@ import ButtonExplore from "../components/ButtonExplore";
 
 export default function Home() {
   return (
-    <div className="bg-home-mobile bg-cover sm:bg-home-tablet">
+    <div className="lg:bg-home-desktop bg-home-mobile bg-repeat-round sm:bg-home-tablet">
       <div className="mx-6 pt-[120px] text-center sm:mx-auto sm:max-w-[450px] sm:pt-[202px]">
         <p className="font-BarlowCondensed tracking-[2.7px] text-color-2 sm:text-[20px]">
           SO, YOU WANT TO TRAVEL TO

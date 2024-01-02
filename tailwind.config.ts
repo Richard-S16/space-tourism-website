@@ -21,6 +21,7 @@ const config: Config = {
       backgroundImage: {
         "home-mobile": "url('/assets/home/background-home-mobile.jpg')",
         "home-tablet": "url('/assets/home/background-home-tablet.jpg')",
+        "home-desktop": "url('/assets/home/background-home-desktop.jpg')",
       },
       boxShadow: {
         "explore-button": "0px 0px 0px 30px rgb(255 255 255 / 10%)",
