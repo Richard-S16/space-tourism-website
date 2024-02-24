@@ -19,7 +19,7 @@ export default function Links({ className }: { className: string }) {
             className={`${
               "/" + link === currentPage
                 ? "border-b-[3px] border-b-color-3"
-                : "hover:border-b-color-3 hover:border-opacity-50"
+                : "border-b-[3px] border-b-transparent hover:border-b-color-3 hover:border-opacity-50"
             } flex items-center self-stretch hover:border-b-[3px] xl:mr-[50px]`}
           >
             <span>
