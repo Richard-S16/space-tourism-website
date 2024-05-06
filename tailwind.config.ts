@@ -22,9 +22,14 @@ const config: Config = {
         "home-mobile": "url('/assets/home/background-home-mobile.jpg')",
         "home-tablet": "url('/assets/home/background-home-tablet.jpg')",
         "home-desktop": "url('/assets/home/background-home-desktop.jpg')",
+        "destination-mobile":
+          "url('/assets/destination/background-destination-mobile.jpg')",
       },
       boxShadow: {
         "explore-button": "0px 0px 0px 30px rgb(255 255 255 / 10%)",
+      },
+      screens: {
+        "3xl": "2000px",
       },
     },
   },

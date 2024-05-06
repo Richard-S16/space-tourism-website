@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export default function HamburguerMenu({ className }: { className: string }) {
+type HamburguerMenuTypes = {
+  className: string;
+};
+
+export default function HamburguerMenu({ className }: HamburguerMenuTypes) {
   return (
     <Image
       src="/assets/shared/icon-hamburger.svg"

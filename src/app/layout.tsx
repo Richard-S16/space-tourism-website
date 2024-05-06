@@ -6,11 +6,11 @@ export const metadata: Metadata = {
   title: "Home Page",
 };
 
-export default function RootLayout({
-  children,
-}: {
+type RootLayoutTypes = {
   children: React.ReactNode;
-}) {
+};
+
+export default function RootLayout({ children }: RootLayoutTypes) {
   return (
     <html lang="en">
       <body className="font-Barlow text-color-3">

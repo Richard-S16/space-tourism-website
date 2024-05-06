@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-export default function Logo({ className }: { className: string }) {
+type LogoTypes = { className: string };
+
+export default function Logo({ className }: LogoTypes) {
   return (
     <Image
       src="/assets/shared/logo.svg"
